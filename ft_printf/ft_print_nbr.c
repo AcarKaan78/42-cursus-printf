@@ -6,13 +6,13 @@
 /*   By: asenel <asenel@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/22 16:16:25 by asenel            #+#    #+#             */
-/*   Updated: 2023/07/22 19:21:45 by asenel           ###   ########.fr       */
+/*   Updated: 2023/07/23 15:42:50 by asenel           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-static	int	ft_put_nbr(long long nbr)
+static	int	ft_put_nbr(long nbr)
 {
 	int	len;
 

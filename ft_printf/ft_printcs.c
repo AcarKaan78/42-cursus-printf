@@ -6,7 +6,7 @@
 /*   By: asenel <asenel@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/18 20:11:30 by asenel            #+#    #+#             */
-/*   Updated: 2023/07/22 20:17:19 by asenel           ###   ########.fr       */
+/*   Updated: 2023/07/23 15:55:05 by asenel           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,8 +30,7 @@ int	ft_putstr(char *str)
 	}
 	while (str[len])
 	{
-		ft_putchar(str[len]);
-		len++;
+		len += ft_putchar(str[len]);
 	}
 	return (len);
 }

@@ -6,7 +6,7 @@
 /*   By: asenel <asenel@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/17 19:00:01 by asenel            #+#    #+#             */
-/*   Updated: 2023/07/22 20:17:03 by asenel           ###   ########.fr       */
+/*   Updated: 2023/07/23 15:44:37 by asenel           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,10 +27,8 @@ static	int	ft_format_str(va_list args, char format_type)
 		len += ft_print_nbr(va_arg(args, int));
 	else if (format_type == 'u')
 		len += ft_print_unbr(va_arg(args, unsigned int));
-	else if (format_type == 'x')
-		len += ft_print_hex(va_arg(args, unsigned int), 'x');
-	else if (format_type == 'X')
-		len += ft_print_hex(va_arg(args, unsigned int), 'X');
+	else if (format_type == 'x' || format_type == 'X')
+		len += ft_print_hex(va_arg(args, unsigned int), format_type);
 	else if (format_type == '%')
 		len += ft_putchar('%');
 	return (len);
